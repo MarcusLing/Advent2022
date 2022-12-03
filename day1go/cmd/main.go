@@ -9,7 +9,7 @@ import (
 func main() {
 	er := elf_factory.NewElfReader()
 
-	elves, err := er.GetElfArray("../assets/elf_data.txt")
+	elves, err := er.GetElfArray("assets/elf_data.txt")
 
 	if err != nil {
 		fmt.Print(err)

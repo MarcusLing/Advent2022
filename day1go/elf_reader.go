@@ -49,10 +49,3 @@ func (e *ElfReader) GetElfArray(dataPath string) ([]Elf, error) {
 type Elf struct {
 	Calories int
 }
-<<<<<<< HEAD
-
-func (e *Elf) calculateTotal() int {
-	return 0
-}
-=======
->>>>>>> f09e307 (helping santas elves finding the alpha elves)
