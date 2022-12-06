@@ -31,22 +31,18 @@ void main()
 
 bool findFirstPackage(char[] data)
 {
-    // if we have more then 1 match its not unique char array
-    int matches = 0;
     int index = 0;
-
     while (index < data.length)
     {
         char compare = data[index];
-
         for (int i = 0; i < data.length; i++)
         {
             if (i != index && compare == data[i])
             {
-                matches++;
+                return false;
             }
         }
         index++;
     }
-    return matches < 1;
+    return true;
 }
