@@ -48,5 +48,5 @@ bool findFirstPackage(char[] data)
         }
         index++;
     }
-    return matches < 2;
+    return matches < 1;
 }
